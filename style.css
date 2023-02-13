@@ -1,0 +1,94 @@
+body {
+  background-color: #323437;
+  color: #fff;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #E2B714;
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.timer, .errors,
+.accuracy, .cpm, .wpm {
+  background-color: #2C2E31;
+  height: 70px;
+  width: 90px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+}
+
+.cpm, .wpm  {
+  display: none;
+}
+
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+  font-size: 2.75rem;
+}
+
+.quote {
+  background-color: #2C2E31;
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #646669;
+  padding: 25px;
+}
+
+.input_area {
+  background-color: #2C2E31;
+  height: 80px;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  outline: none;
+  color: #646669;
+
+  caret-color: #E2B714;
+}
+
+.incorrect_char {
+  color: #CA4754;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: #C8C7BC;
+}
+
+.restart_btn {
+  font-family: 'JetBrains Mono', monospace;
+  color: #fff;
+  display: none;
+  background-color: #E2B714;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}

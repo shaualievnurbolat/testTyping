@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <title>Speed Typer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">Speed Typing</div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Ошибки</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Время</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Аккуратность</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+
+    <div class="quote">Нажмите на пустую форму чтобы начать тестирование</div>
+    <textarea class="input_area" placeholder="начните печатать здесь..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <button class="restart_btn" onclick="resetValues()">Restart</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
